@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Control A. Web 2010-2011 Taula B. Resultat</title>
+</head>
+<body>
+
+  <p align="center"><b>Taula B. Resultat</b></p>
+
+  <table border="1" cellpadding="6" cellspacing="0" width="780" align="center">
+    <tr>
+      <!-- Formulari (blau esquerre) -->
+      <td rowspan="3" bgcolor="#0000FF" width="220" valign="top" style="color:white;">
+        <b>Formularis</b><br><br>
+        <form name="f1">
+          Nom: <input type="text" name="nom" size="12"><br><br>
+          Edat: <input type="text" name="edat" size="5"><br><br>
+          Sexe:<br>
+          <input type="radio" name="sexe" value="home"> Home
+          <input type="radio" name="sexe" value="dona"> Dona<br><br>
+          Professió:<br>
+          <select name="professio">
+            <option>Estudiant</option>
+            <option>Treballador</option>
+            <option>Aturat</option>
+          </select><br><br>
+          Interessos:<br>
+          <input type="checkbox" name="int1"> Cinema
+          <input type="checkbox" name="int2"> Música
+          <input type="checkbox" name="int3"> Esports<br><br>
+          Data: Entre 16 i 20<br><br>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Borrar">
+        </form>
+      </td>
+
+      <!-- Vermell: estils de lletres -->
+      <td colspan="2" bgcolor="#FF0000" style="color:white;" height="50">
+        <b>Aquí provar tots els estils de lletres</b><br>
+        <b>Negreta</b> <i>Itàlica</i> <u>marcada</u> <strong>Destacada</strong> 
+        “Entre comes” <small>Lletra petita</small> <big>Remarcada</big> logo...
+        <br>
+        <font color="yellow">• 1. m²</font>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- Gris: enllaços -->
+      <td colspan="2" bgcolor="#808080" style="color:white;" height="40" align="center">
+        <b>Aquí provar tots els tipus d'enllaços</b><br>
+        <a href="#" style="color:white;">Tornar al menú</a> |
+        <a href="tasca3-exercici6.html" style="color:white;">Tornar a la Taula A. Estructura</a> |
+        <a href="https://www.google.com" target="_blank" style="color:white;">Google</a> |
+        <a href="#" style="color:white;">Calendari</a>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- Vermell/magenta: llista ordenada -->
+      <td bgcolor="#CC0000" width="280" valign="top" style="color:white;">
+        <b>Exemple de llistes ordenades</b>
+        <ol>
+          <li>Aplicacions Web</li>
+          <li>Sistemes operatius en xarxa</li>
+          <li>Seguretat</li>
+          <li>Bases de dades</li>
+        </ol>
+      </td>
+
+      <!-- Verd: llista desordenada -->
+      <td bgcolor="#00FF00" width="280" valign="top">
+        <b>Exemple de llistes desordenades</b>
+        <ul>
+          <li>Aplicacions Web</li>
+          <li>Sistemes operatius en xarxa</li>
+          <li>Seguretat</li>
+          <li>Bases de dades</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- Groc: taula niuada -->
+      <td bgcolor="#FFFF00" valign="top" align="center">
+        <b>Inserirem un altre taula</b><br><br>
+        <b>Taula Prova</b><br>
+        <table border="1" cellpadding="4" cellspacing="0">
+          <tr>
+            <td>A</td><td>B</td><td>C</td><td>D</td>
+          </tr>
+          <tr>
+            <td>E</td><td colspan="2">F</td><td> </td>
+          </tr>
+          <tr>
+            <td>H</td><td>I</td><td>G</td><td>J</td>
+          </tr>
+        </table>
+      </td>
+
+      <!-- Blau: imatge -->
+      <td colspan="2" bgcolor="#0000FF" align="center" valign="middle" style="color:white;">
+        <b>Imatge</b><br><br>
+        <div style="width:180px; height:90px; background-color:black; margin:0 auto;">
+          <!-- Aquí aniria una imatge real -->
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- Gris inferior: codi font -->
+      <td colspan="3" bgcolor="#A0A0A0" align="center">
+        <b>Aquí hi anirà el codi font</b><br>
+        <code style="font-size:12px;">
+          function comprovar(){ if (document.f1.nom.value==""){alert("Això no pot ser!"); return 0;} }
+        </code>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
